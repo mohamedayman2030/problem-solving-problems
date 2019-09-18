@@ -1,0 +1,37 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int a; 
+    int b;
+    int c;
+    int min;
+    cin>>a>>b>>c;
+    int x[3]={a,b,c};
+    
+    for(int i=0 ; i<3 ;i++){
+        for (int j=i+1;j<3 ; j++){
+            if(x[j]<x[i]){
+                min=x[i];
+                x[i]=x[j];
+                x[j]=min;
+            }
+           
+        }
+    }
+    cout<<x[0]<<endl;
+    cout<<x[1]<<endl;
+    cout<<x[2]<<endl;
+    cout<<endl;
+    cout<<a<<endl;
+    cout<<b<<endl;
+    cout<<c<<endl;
+    
+    
+    
+    
+ 
+    return 0;
+}
