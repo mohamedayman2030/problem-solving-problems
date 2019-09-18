@@ -1,0 +1,23 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+  
+    int N;
+int h;
+int m;
+int s;
+int min;
+cin>>N;
+min=N/60;
+
+  h=int(min/60);
+  m=int(min-(h*60));
+  s=N-(h*60*60)-(m*60);
+ 
+  cout<<h<<":"<<m<<":"<<s<<endl;
+ 
+    return 0;
+}
