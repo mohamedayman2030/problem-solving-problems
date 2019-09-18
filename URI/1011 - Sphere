@@ -1,0 +1,14 @@
+#include <iostream>
+ #include<iomanip>
+using namespace std;
+ 
+int main() {
+ const double pi=3.14159;
+ double R;
+ double volume;
+ cin>>R>>setprecision(2);
+ volume=(4/3.0)*pi*R*R*R;
+ cout<<fixed<<"VOLUME"<<" "<<"="<<" "<<setprecision(3)<<volume<<endl;
+ 
+    return 0;
+}
