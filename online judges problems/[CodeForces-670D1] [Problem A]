@@ -1,0 +1,52 @@
+#include <iostream>
+
+using namespace std;
+ const int N=1000+5;
+ long long A[N],B[N],n,k;
+ bool canwebake(long long cookies){
+     long long tmp=k;
+     
+     for(int i=0;i<n;i++){
+        
+         if(B[i]<A[i]*cookies){
+             if(tmp<A[i]*cookies-B[i]){
+                 return 0;
+             
+             }
+                 tmp=tmp-(A[i]*cookies-B[i]);
+                 
+             
+             
+         }
+        
+         
+     }
+     return 1;
+ }
+ long long binarysearch(){
+     long long low=0,mid,high=2000+5;
+     while(high-low>0){
+     mid=(low+high+1)/2;
+     if(canwebake(mid)){
+         low=mid;
+     }
+     else{
+         high=mid-1;
+     }
+     }
+     return low;
+ }
+int main()
+{
+  cin>>n>>k;
+  for(int i=0;i<n;i++){
+      cin>>A[i];
+      
+  }
+  for(int i=0;i<n;i++){
+      cin>>B[i];
+      
+  }
+  cout<<binarysearch();
+  return 0;
+}
