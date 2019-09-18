@@ -1,0 +1,20 @@
+#include <iostream>
+ #include<iomanip>
+using namespace std;
+ 
+int main() {
+ 
+  string name;
+double ss;
+double ts;
+double p;
+double total;
+cin>>name;
+cin>>ss>>setprecision(2);
+cin>>ts>>setprecision(2);
+p=(ts*15)/100;
+total=ss+p;
+cout<<fixed<<"TOTAL"<<" "<<"="<<" "<<"R$"<<" "<<setprecision(2)<<total<<endl;
+
+    return 0;
+}
