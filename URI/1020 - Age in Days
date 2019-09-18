@@ -1,0 +1,20 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+   int days;
+   int years;
+   int month;
+   int d;
+   cin>>days;
+   years=int(days/365);
+   month=int((days-years*365)/30);
+   d=days-(years*365)-(month*30);
+   cout<<years<<" "<<"ano(s)"<<endl;
+   cout<<month<<" "<<"mes(es)"<<endl;
+   cout<<d<<" "<<"dia(s)"<<endl;
+ 
+    return 0;
+}
