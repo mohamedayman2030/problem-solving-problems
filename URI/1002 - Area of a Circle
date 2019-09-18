@@ -1,0 +1,15 @@
+#include <iostream>
+ #include<iomanip>
+using namespace std;
+ 
+int main() {
+ 
+   const double n=3.14159;
+   double R;
+   double A;
+   cin>>R>>setprecision(2);
+   A=n*R*R;
+   cout<<fixed<<"A"<<"="<<setprecision(4)<<A<<endl;
+ 
+    return 0;
+}
