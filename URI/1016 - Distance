@@ -1,0 +1,14 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+   int y;
+   cin>>y;
+   int min;
+   min=y*2;
+   cout<<min<<" "<<"minutos"<<endl;
+ 
+    return 0;
+}
