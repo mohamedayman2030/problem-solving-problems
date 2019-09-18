@@ -1,0 +1,33 @@
+/* problem link:https://www.urionlinejudge.com.br/judge/en/problems/view/1060 */
+#include <iostream>
+ #include<iomanip>
+using namespace std;
+ 
+int main() {
+ 
+      double a;
+    double b;
+    double c;
+    double d;
+    double f;
+    double g;
+    double cnt=0;
+    cin>>a>>setprecision(1);
+    cin>>b>>setprecision(1);
+    cin>>c>>setprecision(1);
+    cin>>d>>setprecision(1);
+    cin>>f>>setprecision(1);
+    cin>>g>>setprecision(1);
+    double L[6]={a,b,c,d,f,g};
+    for(int i=0;i<6;i++){
+        if(L[i]>0){
+             cnt+=1;
+            
+        }
+        
+    }
+    cout<<cnt<<" "<<"valores positivos"<<endl;
+    
+ 
+    return 0;
+}
