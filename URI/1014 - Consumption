@@ -1,0 +1,16 @@
+#include <iostream>
+ #include <iomanip>
+using namespace std;
+ 
+int main() {
+ 
+    int X;
+    double Y;
+    double c;
+    cin>>X;
+    cin>>Y>>setprecision(1);
+    c=(double)X/Y;
+    cout<<fixed<<setprecision(3)<<c<<" "<<"km/l"<<endl;
+ 
+    return 0;
+}
