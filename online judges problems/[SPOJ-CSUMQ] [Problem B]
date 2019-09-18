@@ -1,0 +1,47 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main(){
+    const int N=1e5;
+    int Q=1e4;
+    int A[N];
+    int S[N];
+    int sum1=0;
+    int sum=0;
+    int sum2=0;
+    int size;
+    pair<int,int>B[Q];
+    int size2;
+    cin>>size;
+    for(int i=0;i<size;i++){
+     
+        cin>>A[i];
+        S[i]=A[i]+S[i-1];
+        
+        
+        
+    }
+    cin>>size2;
+    for(int j=0;j<size2;j++){
+        cin>>B[Q].first>>B[Q].second;
+        if(B[Q].first==B[Q].second){
+            cout<<A[B[Q].first]<<endl;
+        }
+        else if(B[Q].first==0 && B[Q].second==size-1) {
+            
+            cout<<S[size-1]<<endl;
+        }
+        else {  
+            sum=0;
+            for(int k=B[Q].first;k<=B[Q].second;k++){
+                
+                sum=sum+A[k];
+                
+            }
+            cout<<sum<<endl;
+        }
+        
+    
+        }
+        
+    }
