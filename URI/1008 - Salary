@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+ 
+   
+   int number;
+   int hours;
+   double sph;
+   double spm;
+   cin>>number;
+   cin>>hours;
+   cin>>sph>>setprecision(2);
+   spm=sph*hours;
+   cout<<"NUMBER"<<" "<<"="<<" "<<number<<endl;
+   cout<<fixed<<"SALARY"<<" "<<"="<<" "<<"U$"<<" "<<setprecision(2)<<spm<<endl;
+ 
+    return 0;
+}
