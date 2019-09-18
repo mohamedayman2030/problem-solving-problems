@@ -1,0 +1,50 @@
+ #include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+ double salary;
+ cin>>salary>>setprecision(2);
+ if(salary>=0.00 && salary<=400.00){
+     double newsalary=salary+(salary*15/100);
+     double earned=newsalary-salary;
+     int p=15;
+     cout<<fixed<<"Novo salario:"<<" "<<setprecision(2)<<newsalary<<endl;
+     cout<<fixed<<"Reajuste ganho:"<<" "<<setprecision(2)<<earned<<endl;
+    cout<<"Em percentual:"<<" "<<p<<" "<<"%"<<endl;
+ }
+  if(salary>=400.01 && salary<=800.0){
+     double newsalary=salary+(salary*12/100);
+     double earned=newsalary-salary;
+     int p=12;
+     cout<<fixed<<"Novo salario:"<<" "<<setprecision(2)<<newsalary<<endl;
+     cout<<fixed<<"Reajuste ganho:"<<" "<<setprecision(2)<<earned<<endl;
+     cout<<"Em percentual:"<<" "<<p<<" "<<"%"<<endl;
+ }
+  if(salary>=800.01 && salary<=1200.00){
+     double newsalary=salary+(salary*10/100);
+     double earned=newsalary-salary;
+     int p=10;
+     cout<<fixed<<"Novo salario:"<<" "<<setprecision(2)<<newsalary<<endl;
+     cout<<fixed<<"Reajuste ganho:"<<" "<<setprecision(2)<<earned<<endl;
+     cout<<"Em percentual:"<<" "<<p<<" "<<"%"<<endl;
+ }
+  if(salary>=1200.01 && salary<=2000){
+     double newsalary=salary+(salary*7/100);
+     double earned=newsalary-salary;
+     int p=7;
+     cout<<fixed<<"Novo salario:"<<" "<<setprecision(2)<<newsalary<<endl;
+     cout<<fixed<<"Reajuste ganho:"<<" "<<setprecision(2)<<earned<<endl;
+     cout<<"Em percentual:"<<" "<<p<<" "<<"%"<<endl;
+ }
+  if(salary>2000){
+     double newsalary=salary+(salary*4/100);
+     double earned=newsalary-salary;
+     int p=4;
+     cout<<fixed<<"Novo salario:"<<" "<<setprecision(2)<<newsalary<<endl;
+     cout<<fixed<<"Reajuste ganho:"<<" "<<setprecision(2)<<earned<<endl;
+     cout<<"Em percentual:"<<" "<<p<<" "<<"%"<<endl;
+ }
+ 
+    return 0;
+}
