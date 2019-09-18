@@ -1,0 +1,20 @@
+#include <iostream>
+ #include <iomanip>
+using namespace std;
+ 
+int main() {
+ int code1;
+ int number1;
+ double price1;
+  int code2;
+ int number2;
+ double price2;
+ double tprice;
+ cin>>code1>>number1>>price1;
+ cin>>code2>>number2>>price2;
+ tprice=(number1*price1)+(number2*price2);
+ cout<<fixed<<"VALOR A PAGAR:"<<" "<<"R$"<<" "<<setprecision(2)<<tprice<<endl;
+ 
+ 
+    return 0;
+}
