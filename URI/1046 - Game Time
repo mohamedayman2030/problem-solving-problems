@@ -1,0 +1,27 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int startg;
+    int endg;
+    cin>>startg>>endg;
+    if(startg>endg  ){
+        int x=24-startg;
+        int y=0+endg;
+        int h=x+y;
+         cout<<"O JOGO DUROU"<<" "<<h<<" "<<"HORA(S)"<<endl;
+    }
+    else if(startg==endg){
+        int i=24;
+         cout<<"O JOGO DUROU"<<" "<<i<<" "<<"HORA(S)"<<endl;
+    }
+    else if(startg<endg){
+        int z=endg-startg;
+        cout<<"O JOGO DUROU"<<" "<<z<<" "<<"HORA(S)"<<endl;
+
+    }
+ 
+    return 0;
+}
